@@ -19,4 +19,4 @@ app.get('/', (req, res) => (
     res.json({message: 'Server is running!'})
 ))
 
-app.listen(3333, () => (console.log('Server in running on port 3333!')));
+app.listen( process.env.PORT || 3333, () => (console.log('Server in running on port 3333!')));
